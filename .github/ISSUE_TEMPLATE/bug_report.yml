@@ -1,0 +1,31 @@
+name: Bug report
+description: Something in the CLI does not work the way it should
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: CLI version
+      description: Output of `remote --version`.
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and Node version
+      description: For example "macOS 15.2, Node 22.11".
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you ran, and what it did instead of what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the relevant terminal output. Redact tokens and sandbox names you would rather not share.
+      render: shell
