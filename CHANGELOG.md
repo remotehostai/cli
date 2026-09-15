@@ -3,6 +3,11 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.1 — 2026-09-15
+
+- Document the `--json` flag and its output contract.
+- First release published through CI rather than by hand.
+
 ## Unreleased
 
 ### Added
