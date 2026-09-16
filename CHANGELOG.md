@@ -3,6 +3,10 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.2 — 2026-09-16
+
+- `remote --version` now reports the version that was actually published; 0.1.1 identified itself as 0.1.0.
+
 ## 0.1.1 — 2026-09-15
 
 - Document the `--json` flag and its output contract.
