@@ -3,6 +3,10 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.6 — 2026-09-19
+
+An attach that has ended no longer leaves a pipe behind that stalls the next agent sign-in for five seconds and reports no browser; arming now takes it over and kills the reader left holding it.
+
 ## 0.1.5 — 2026-09-19
 
 Agent sign-in now opens in the browser on your own machine: `claude` in a sandbox hands its authorize URL to `remote attach`, which opens it locally and delivers the OAuth callback back into the sandbox -- no copying a wrapped URL out of the terminal.
