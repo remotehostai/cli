@@ -3,6 +3,10 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.5 — 2026-09-19
+
+Agent sign-in now opens in the browser on your own machine: `claude` in a sandbox hands its authorize URL to `remote attach`, which opens it locally and delivers the OAuth callback back into the sandbox -- no copying a wrapped URL out of the terminal.
+
 ## 0.1.4 — 2026-09-19
 
 Fix `remote attach` on production: terminal sessions opened against tunnel.direct.remotehost.ai, a hostname that stopped resolving after the edge cutover, and now follow the API URL.
