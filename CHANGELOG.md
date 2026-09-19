@@ -3,6 +3,10 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.4 — 2026-09-19
+
+Fix `remote attach` on production: terminal sessions opened against tunnel.direct.remotehost.ai, a hostname that stopped resolving after the edge cutover, and now follow the API URL.
+
 ## 0.1.3 — 2026-09-19
 
 - `remote` is the command the CLI prints everywhere; `rh` remains a short alias.
