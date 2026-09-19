@@ -3,6 +3,11 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.3 — 2026-09-19
+
+- `remote` is the command the CLI prints everywhere; `rh` remains a short alias.
+- Dropped the `remotehost` bin alias. It collided with the desktop app's own launcher at /usr/local/bin/remotehost, where whichever installed last decided what the name ran.
+
 ## 0.1.2 — 2026-09-16
 
 - `remote --version` now reports the version that was actually published; 0.1.1 identified itself as 0.1.0.

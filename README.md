@@ -8,8 +8,8 @@ npm i -g @remotehost/cli
 remote login
 ```
 
-The install puts three names on your PATH — `remote`, and `rh` and `remotehost`
-as aliases — all the same program.
+The install puts two names on your PATH — `remote`, and `rh` as a shorter
+alias — both the same program.
 
 ## Getting started
 
