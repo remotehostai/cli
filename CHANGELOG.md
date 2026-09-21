@@ -3,6 +3,11 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.7 — 2026-09-21
+
+- Fix CLI agent sign-in callbacks by honoring the OAuth redirect path, including Codex /auth/callback.
+- Use remote consistently in CLI documentation while retaining the rh compatibility alias.
+
 ## 0.1.6 — 2026-09-19
 
 An attach that has ended no longer leaves a pipe behind that stalls the next agent sign-in for five seconds and reports no browser; arming now takes it over and kills the reader left holding it.
