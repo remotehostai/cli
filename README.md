@@ -22,6 +22,23 @@ remote sleep <name>        # stop paying for it, keep the disk
 Run `remote` on its own to open the TUI, which is the interactive version of all
 of the above.
 
+In the sandbox table, **Space** toggles the highlighted row, **Shift+Up/Down**
+selects a range, **Ctrl+A** selects all matching rows, and **a** toggles all.
+**Esc** clears the selection. Use **/** to filter; Space and **a** type into
+the filter while it is focused. Selections follow sandbox IDs across refreshes
+and clear when rows are filtered out or you leave the project.
+
+With rows selected, **Enter**, **s**, or **Ctrl+G** opens actions for the selection:
+Sleep, Wake, Renew, and Delete. Each action shows its eligible sandbox count;
+for example, Sleep applies to running persistent sandboxes and Renew applies to
+running ephemeral sandboxes. Delete lists its targets and requires **y** to
+confirm. Results report successes and failures, leaving failed rows selected
+for retry.
+
+Type while the command menu is open to filter its actions. Use **Up/Down** to
+move through matches, **Enter** to run, **Backspace** to edit, and **Esc** or
+**Ctrl+G** to close. The filter resets each time the menu opens.
+
 ## Scripting
 
 Every command that reports data takes `--json`, which is the flag to reach for
@@ -73,3 +90,13 @@ package.
 
 - Issues: https://github.com/remotehostai/cli/issues
 - Docs: https://remotehost.ai/docs
+
+## Local development
+
+`remote-staging` runs `packages/cli/src/index-staging.ts` from the local root
+checkout through `tsx`, against `https://api-staging.remotehost.ai`. CLI source
+edits take effect on the next launch without copying a bundle. Staging keeps its
+own login session. `remote-staging-update` rebuilds local workspace dependencies.
+
+`remote` is the npm registry installation of `@remotehost/cli`; keep it separate
+from local builds and workspace links.

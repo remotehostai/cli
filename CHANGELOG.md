@@ -3,6 +3,12 @@
 Notable changes to the RemoteHost CLI. Versions follow the npm package
 [`@remotehost/cli`](https://www.npmjs.com/package/@remotehost/cli).
 
+## 0.1.8 — 2026-09-21
+
+- Select multiple sandboxes in the TUI with Space, Shift+Up/Down, and Ctrl+A, then apply Sleep, Wake, Renew, or Delete.
+- Type in the command menu to filter actions; highlighted actions stay stable across background refreshes.
+- Confirm permanent deletion, see batch success/failure results, and retry failed selections without repeating successful actions.
+
 ## 0.1.7 — 2026-09-21
 
 - Fix CLI agent sign-in callbacks by honoring the OAuth redirect path, including Codex /auth/callback.
